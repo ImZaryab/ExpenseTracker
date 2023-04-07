@@ -24,6 +24,7 @@ export default function Form() {
         <div className="grid gap-4">
           <div className="input-group">
             <input
+              required
               type="text"
               placeholder="Salary, House Rent, Income, Bills"
               className="form-input"
@@ -37,7 +38,7 @@ export default function Form() {
           </select>
           <div className="input-group">
             <input
-              type="text"
+              type="number"
               placeholder="Amount"
               className="form-input"
               {...register("amount")}
