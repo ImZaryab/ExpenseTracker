@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+:root{
+  --color-primary: #6D67E4;
+  --color-secondary: #46C2CB;
+  --color-accent: #F2F7A1;
+  --color-dark: #453C67;
+}
+
+*>*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.App{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-dark{
+  background-color: var(--color-dark);
+}
+
+.bg-primary{
+  background-color: var(--color-primary);
+}
+
+.bg-secondary{
+  background-color: var(--color-secondary);
+}
+
+.bg-accent{
+  background-color: var(--color-accent);
+}
+
+.chart .title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-input{
+  @apply mt-1 block w-full py-2 px-3 bg-white rounded-md focus:outline-none focus:ring-primary sm:text-sm
+}
